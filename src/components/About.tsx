@@ -4,19 +4,19 @@ import { User, Briefcase, GraduationCap, Award } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Briefcase, label: 'Years Experience', value: '5+' },
-    { icon: Award, label: 'Projects Completed', value: '50+' },
-    { icon: User, label: 'Happy Clients', value: '25+' },
-    { icon: GraduationCap, label: 'Certifications', value: '10+' },
+    { icon: GraduationCap, label: 'Current Year', value: '3rd' },
+    { icon: Award, label: 'Projects Completed', value: '8+' },
+    { icon: Briefcase, label: 'Internships', value: '2+' },
+    { icon: User, label: 'Study Groups', value: '5+' },
   ];
 
   const highlights = [
-    'Full-stack development expertise',
-    'Modern framework proficiency',
+    'Machine Learning & AI',
+    'Data Analysis & Visualization',
+    'Python Programming',
     'Problem-solving mindset',
-    'Collaborative team player',
     'Continuous learning approach',
-    'User-centered design focus',
+    'Research & Innovation',
   ];
 
   return (
@@ -32,20 +32,20 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-foreground mb-4">
-              Passionate Developer & Problem Solver
+              AI & Data Science Enthusiast
             </h3>
             
             <p className="text-muted-foreground leading-relaxed mb-6">
-              With over 5 years of experience in software development, I specialize in creating 
-              innovative digital solutions that drive business growth. My journey began with a 
-              curiosity for technology and has evolved into a passion for crafting exceptional 
-              user experiences.
+              Currently pursuing AI & Data Science at Christ The King Engineering College, Karamadai. 
+              My journey in technology is driven by curiosity about artificial intelligence and its 
+              potential to solve real-world problems. I'm passionate about machine learning, 
+              data analysis, and creating intelligent solutions.
             </p>
             
             <p className="text-muted-foreground leading-relaxed mb-8">
-              I believe in the power of clean code, thoughtful design, and collaborative teamwork. 
-              Whether working on complex backend systems or intuitive frontend interfaces, 
-              I strive to deliver solutions that exceed expectations.
+              I believe in continuous learning and staying updated with the latest developments 
+              in AI and data science. Through academic projects and personal exploration, 
+              I strive to build solutions that make a meaningful impact.
             </p>
 
             <div className="space-y-4">

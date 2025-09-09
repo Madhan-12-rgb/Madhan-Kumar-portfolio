@@ -9,19 +9,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com',
+      value: 'madhank092004@gmail.com',
+      href: 'mailto:madhank092004@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 9629837671',
+      href: 'tel:+919629837671',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Your City, Country',
+      value: 'Karamadai, Tamil Nadu',
       href: '#',
     },
   ];

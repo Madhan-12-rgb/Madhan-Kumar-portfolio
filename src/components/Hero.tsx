@@ -24,16 +24,16 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in">
-            Your Name
+            Madhan Kumar
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-primary-foreground/90 mb-8 animate-fade-in [animation-delay:0.2s]">
-            Professional Title & Expertise
+            AI & Data Science Student
           </h2>
           
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.4s]">
-            Crafting exceptional digital experiences with expertise in modern technologies. 
-            Passionate about creating solutions that make a difference.
+            Passionate AI & Data Science student at Christ The King Engineering College, Karamadai. 
+            Exploring artificial intelligence and data science to create innovative solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in [animation-delay:0.6s]">
