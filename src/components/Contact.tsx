@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Github, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
@@ -30,7 +30,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourprofile',
+      href: 'https://www.linkedin.com/in/madhan-kumar-0a9007301',
       color: 'hover:text-blue-600',
     },
     {
@@ -40,10 +40,10 @@ const Contact = () => {
       color: 'hover:text-gray-800',
     },
     {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/yourusername',
-      color: 'hover:text-blue-400',
+      icon: Instagram,
+      label: 'Instagram',
+      href: 'https://instagram.com/madhan_1257',
+      color: 'hover:text-pink-500',
     },
   ];
 
