@@ -116,7 +116,15 @@
     @apply border-border;
   }
 
+  html {
+    @apply bg-background text-foreground;
+  }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  #root {
+    @apply bg-background text-foreground min-h-screen;
   }
 }
