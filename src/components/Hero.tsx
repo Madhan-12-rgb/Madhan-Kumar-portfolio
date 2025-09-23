@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Download, Mail } from 'lucide-react';
-import heroBg from '@/assets/hero-bg.jpg';
+import citySkyline from '@/assets/city-skyline.jpg';
+import profileImage from '/lovable-uploads/03c45186-0b1f-49ce-b7ea-c7470e4c7ff1.png';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -15,67 +15,80 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--primary-glow) / 0.8)), url(${heroBg})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${citySkyline})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
       }}
     >
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 p-6">
+        <div className="flex items-center justify-between">
+          <div className="text-2xl font-bold text-primary">Madhan Kumar</div>
+          <div className="hidden md:flex items-center space-x-8">
+            {['ABOUT', 'SKILLS', 'PROJECTS', 'EXPERIENCE', 'CONTACT'].map((item) => (
+              <button
+                key={item}
+                onClick={() => scrollToSection(item.toLowerCase())}
+                className="text-foreground/80 hover:text-primary transition-colors duration-300 text-sm tracking-wider"
+              >
+                {item}
+              </button>
+            ))}
+            <span className="text-foreground/80 text-sm tracking-wider">🔒 RESUME</span>
+          </div>
+        </div>
+      </nav>
+
+      {/* Main Content */}
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in">
+        <div className="max-w-2xl mx-auto">
+          {/* Profile Image */}
+          <div className="mb-8 animate-fade-in">
+            <div className="w-48 h-48 mx-auto rounded-full border-4 border-foreground overflow-hidden">
+              <img 
+                src={profileImage}
+                alt="Madhan Kumar"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
+          {/* Name */}
+          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-8 animate-fade-in [animation-delay:0.2s]">
             Madhan Kumar
           </h1>
           
-          <h2 className="text-2xl md:text-3xl text-primary-foreground/90 mb-8 animate-fade-in [animation-delay:0.2s]">
-            AI & Data Science Student
-          </h2>
-          
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in [animation-delay:0.4s]">
-            Passionate AI & Data Science student at Christ The King Engineering College, Karamadai. 
-            Exploring artificial intelligence and data science to create innovative solutions.
+          {/* Subtitle */}
+          <p className="text-xl text-foreground/60 mb-16 animate-fade-in [animation-delay:0.4s] italic">
+            Developing
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in [animation-delay:0.6s]">
+          {/* Enter Portfolio Button */}
+          <div className="animate-fade-in [animation-delay:0.6s]">
             <Button
               size="lg"
-              onClick={() => scrollToSection('projects')}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow hover:shadow-elegant transition-all duration-300"
+              onClick={() => scrollToSection('about')}
+              className="bg-foreground text-background hover:bg-foreground/90 px-8 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105"
             >
-              View My Work
-            </Button>
-            
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Download CV
-            </Button>
-            
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={() => scrollToSection('contact')}
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
-            >
-              <Mail className="mr-2 h-4 w-4" />
-              Contact Me
+              Enter Portfolio
             </Button>
           </div>
-          
-          <button
-            onClick={() => scrollToSection('about')}
-            className="animate-bounce text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-300"
-            aria-label="Scroll to about section"
-          >
-            <ArrowDown className="h-8 w-8 mx-auto" />
-          </button>
         </div>
       </div>
-      
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20" />
+
+      {/* AI Companion mockup (bottom left) */}
+      <div className="absolute bottom-6 left-6 bg-background/10 backdrop-blur-md rounded-lg p-4 text-foreground/70 text-sm border border-foreground/20">
+        ⚙️ 🤖 Ask My AI Companion!
+      </div>
+
+      {/* Scroll up button (bottom right) */}
+      <button 
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="absolute bottom-6 right-6 bg-primary text-primary-foreground w-12 h-12 rounded-full flex items-center justify-center hover:bg-primary/90 transition-all duration-300"
+      >
+        ↑
+      </button>
     </section>
   );
 };
