@@ -6,6 +6,14 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: 'Unauthorized Construction of Drone',
+      description: 'Custom-built autonomous drone with advanced flight controls, real-time video streaming, and precision navigation systems.',
+      image: 'https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?w=600&h=400&fit=crop',
+      technologies: ['Arduino', 'Python', 'OpenCV', 'RaspberryPi'],
+      category: 'Hardware/IoT',
+      featured: true,
+    },
+    {
       title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution with modern payment integration, inventory management, and admin dashboard.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
